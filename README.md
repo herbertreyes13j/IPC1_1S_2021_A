@@ -11,3 +11,8 @@
 | git commit -m " Mensaje de actualizacion " | Realiza un commit, junto con el mensaje de dicho cambio |
 | git push | Sube los cambios a nuestro repositorio |
 | git status | Mira el estado de los cambios realizados |
+
+
+## Sesion 25/03/2021
+
+Se procedio a crear pagina de inicio, y mostrar como se diseña desde 0 una pagina web. 
