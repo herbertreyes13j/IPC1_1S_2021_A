@@ -16,3 +16,9 @@
 ## Sesion 25/03/2021
 
 Se procedio a crear pagina de inicio, y mostrar como se diseña desde 0 una pagina web. 
+
+
+## Sesion 31/03/2021 
+
+Se precedio a crear un login, y a realizar las primeras funciones para hacer un inicio de sesion. 
+
