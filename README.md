@@ -17,8 +17,12 @@
 
 Se procedio a crear pagina de inicio, y mostrar como se diseña desde 0 una pagina web. 
 
+Grabacion https://drive.google.com/file/d/1BXagghV1Kv6QTW4iUAhZvG6BjicCJh_n/view?usp=sharing
+
 
 ## Sesion 31/03/2021 
 
 Se precedio a crear un login, y a realizar las primeras funciones para hacer un inicio de sesion. 
+
+Grabacion https://drive.google.com/file/d/1U0mLI334045Kloq2LufY1jI0MwLdguD8/view?usp=sharing
 
