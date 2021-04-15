@@ -2,7 +2,7 @@
 
 from flask import Flask,request,jsonify
 from flask_cors import CORS
-
+from Gestor import Gestor
 #Crear la app
 
 app = Flask(__name__)
@@ -10,6 +10,7 @@ app.config["DEBUG"] = True
 
 CORS(app)
 
+gestor = Gestor()
 
 # EndPoints
 
@@ -17,7 +18,35 @@ CORS(app)
 def home():
     return 'SERVER IS WORKING!!!!'
 
+@app.route('/obtenerlibros')
+def obtenerlibros():
+    return gestor.obtener_libros()
 
+@app.route('/obtenerusuarios')
+def obtenerusuarios():
+    return gestor.obtener_usuarios()
+
+@app.route('/libros',methods=['POST'])
+def crearlibro():
+    dato = request.json
+    gestor.crearLibro(dato['titulo'],dato['autor'],dato['imagen'],dato['descripcion'])
+    return '{"Estado":"Libro Creado"}'
+
+@app.route('/libros/<titulo>/<autor>',methods=['DELETE'])
+def eliminar_libro(titulo,autor):
+    if(gestor.eliminar_libro(titulo,autor)):
+        return '{"data":"Eliminado"}'
+    return '{"data":"Error"}'
+
+
+@app.route('/libros/<titulo>',methods=['PUT'])
+def actualizarlibro(titulo):
+    dato = request.json
+
+    if gestor.actualizar_libro(titulo,dato['titulo'],dato['autor'],dato['imagen'],dato['descripcion']):
+        return '{"data":"Actualizado"}'
+    return '{"data":"Error"}'
+    
 
 #INICIAR EL SERVIDOR
 
