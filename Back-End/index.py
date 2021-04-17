@@ -47,6 +47,17 @@ def actualizarlibro(titulo):
         return '{"data":"Actualizado"}'
     return '{"data":"Error"}'
     
+@app.route('/login/<user>/<password>')
+def login(user,password):
+    print('entra')
+    return gestor.iniciar_sesion(user,password)
+
+@app.route('/registro',methods=['POST'])
+def registrar():
+    dato = request.json
+    gestor.registrar_usuario(dato['nombre'],dato['apellido'],dato['password'],dato['user'])    
+    return '{"data":"Creado"}'
+
 
 #INICIAR EL SERVIDOR
 

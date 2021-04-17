@@ -33,3 +33,9 @@ Se procedio a trabajar todo el back end.
 - Grabacion Explicacion Teorica Laboratorio 14/04/2021 https://drive.google.com/file/d/1JZsOECJK5Ent-uQKNZHEGFrFeL4DVWg8/view?usp=sharing
 - Grabacion Sesion 14/04/2021 Creando Endpoints Parte 1 https://drive.google.com/file/d/1nQIatTh20kAcuHbxLz-mBauHs1Q3k0UI/view?usp=sharing
 - Grabacion Sesion 14/04/2021 Creando Endpoints Parte 2 https://drive.google.com/file/d/1gt4YN4JVHu30KQqDatE7dztYxEMQ9Gdq/view?usp=sharing
+
+## Sesion 17/04/2021
+
+Se procedio a unir el back end con el front end 
+
+- Grabacion: https://drive.google.com/file/d/1-nofGd81-ULRkWw59Av6VAnS-EYEJZuM/view?usp=sharing

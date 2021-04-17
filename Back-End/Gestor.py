@@ -39,6 +39,16 @@ class Gestor:
                 return True
         return False
 
+    #Iniciar Sesion
+    def iniciar_sesion(self,user,password):
+        for x in self.usuarios:
+            if x.password==password and x.user ==user:
+                return json.dumps(x.__dict__)
+        return '{"nombre":"false"}'
+
+    def registrar_usuario(self,nombre,apellido,password,user):
+        self.usuarios.append(Usuario(nombre,apellido,password,user))
+
 
 
         
