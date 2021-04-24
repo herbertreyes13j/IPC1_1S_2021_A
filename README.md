@@ -39,3 +39,9 @@ Se procedio a trabajar todo el back end.
 Se procedio a unir el back end con el front end 
 
 - Grabacion: https://drive.google.com/file/d/1-nofGd81-ULRkWw59Av6VAnS-EYEJZuM/view?usp=sharing
+
+## Sesion 23/04/2021
+
+Se procedio con Actualizar, Eliminar y Crear y carga masiva de datos
+
+- Grabacion: https://drive.google.com/file/d/18Xnlp3mDl7Pi7a0Zzz20ORvJ9goesJUY/view?usp=sharing

@@ -58,6 +58,11 @@ def registrar():
     gestor.registrar_usuario(dato['nombre'],dato['apellido'],dato['password'],dato['user'])    
     return '{"data":"Creado"}'
 
+@app.route('/carga',methods=['POST'])
+def carga():
+    dato = request.json
+    gestor.cargamasiva(dato['data'])
+    return '{"data":"Cargados"}'
 
 #INICIAR EL SERVIDOR
 

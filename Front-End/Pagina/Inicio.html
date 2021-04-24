@@ -80,10 +80,13 @@
                                         <a class="page-scroll" href="#VerLibros">Ver Libros</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#features">Administrar Libros</a>
+                                        <a class="page-scroll" href="#creacionymodificacion">Administrar Libros</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#VerUsuarios">Ver Usuarios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#Masiva">CargaMasiva</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#facts">Gestion Usuarios</a>
@@ -118,94 +121,62 @@
         </div> <!-- header hero -->
     </header>
     
-    <!--====== HEADER PART ENDS ======-->
+    <!--====== TERMINAR VER CARDS Y ELIMINAR ======-->
+
     
-    <!--====== BRAMD PART START ======-->
+    <!--====== MODIFCACION Y CREACION INICIA ======-->
     
-    <div class="brand-area pt-90">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="brand-logo d-flex align-items-center justify-content-center justify-content-md-between">
-                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <img src="assets/images/brand-1.png" alt="brand">
-                        </div> <!-- single logo -->
-                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                            <img src="assets/images/brand-2.png" alt="brand">
-                        </div> <!-- single logo -->
-                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                            <img src="assets/images/brand-3.png" alt="brand">
-                        </div> <!-- single logo -->
-                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                            <img src="assets/images/brand-4.png" alt="brand">
-                        </div> <!-- single logo -->
-                        <div class="single-logo mt-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                            <img src="assets/images/brand-5.png" alt="brand">
-                        </div> <!-- single logo -->
-                    </div> <!-- brand logo -->
-                </div>
-            </div>   <!-- row -->
-        </div> <!-- container -->
-    </div>
-    
-    <!--====== BRAMD PART ENDS ======-->
-    
-    <!--====== SERVICES PART START ======-->
-    
-    <section id="features" class="services-area pt-120">
+    <section id="creacionymodificacion" class="services-area pt-120">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="section-title text-center pb-40">
                         <div class="line m-auto"></div>
-                        <h3 class="title">Clean and simple design, <span> Comes with everything you need to get started!</span></h3>
+                        <h3 class="title">Agregar/Modificar un Libro</h3>
+                        <br>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
             <div class="row justify-content-center">
+
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape">
-                            <i class="lni-baloon"></i>
-                        </div>
+                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                 
                         <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Clean</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+                            <h4 class="services-title"><a href="#">Crear Nuevo Libro</a></h4>
+                            <br>
+                            <input type="text" id="titulo" placeholder="Titulo">
+                            <input type="text" id="autor" placeholder="Autor">
+                            <input type="text" id="descripcion" placeholder="Descripcion">
+                            <input type="text" id="imagen" placeholder="Imagen">
+                            <br>
+                            <br>
+                            <br>
+                            <button class="btn btn btn-success" onclick="agregarlibro()">Agregar Libro</button>
+                            <br>                       
                         </div>
                     </div> <!-- single services -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape">
-                            <i class="lni-cog"></i>
-                        </div>
+                 
                         <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Robust</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+                            <h4 class="services-title"><a href="#">Modificar Libro</a></h4>
+                            <br>
+                            <input type="text" id="vtitulo" placeholder="Titulo a Modificar">
+                            <input type="text" id="ntitulo" placeholder="Nuevo Titulo">
+                            <input type="text" id="nautor" placeholder="Nuevo Autor">
+                            <input type="text" id="ndescripcion" placeholder="Nueva Descripcion">
+                            <input type="text" id="nimagen" placeholder="Nueva Imagen">
+                            <br>
+                            <button class="btn btn btn-success" onclick="modificarlibro()">Modificar Libro</button>
+                                                   
                         </div>
                     </div> <!-- single services -->
                 </div>
-                <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                        <div class="services-icon">
-                            <img class="shape" src="assets/images/services-shape.svg" alt="shape">
-                            <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape">
-                            <i class="lni-bolt-alt"></i>
-                        </div>
-                        <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Powerful</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-                            <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
+
             </div> <!-- row -->
+           
         </div> <!-- container -->
     </section>
     
@@ -233,8 +204,30 @@
     
     <!--====== ABOUT PART ENDS ======-->
     
-    <!--====== ABOUT PART START ======-->
-   
+    <!--====== CARGA MASIVA ======-->
+    <section id="Masiva" class="about-area pt-70">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-8">
+                      <div class="section-title">
+                            <div class="line"></div>
+                            <h3 class="title">Carga Masvia</h3>
+                        </div> <!-- section title -->
+                        <br>
+                        <label for="avatar">Elija Archivo a Cargar</label>
+
+                        <input type="file"
+                               id="carga" name="carga"
+                               accept=".csv">
+                               <br>
+                               <button class="btn btn btn-success" onclick="cargar()">Cargar</button>
+                                   
+                    </div>
+                </div>
+ 
+        </div> <!-- container -->
+    </section>
     
     <!--====== ABOUT PART ENDS ======-->
 

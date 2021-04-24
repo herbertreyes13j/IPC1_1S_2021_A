@@ -1,7 +1,7 @@
 from Usuarios import Usuario
 from Libros import Libro
 import json
-
+import re
 
 class Gestor:
     def __init__(self):
@@ -48,6 +48,17 @@ class Gestor:
 
     def registrar_usuario(self,nombre,apellido,password,user):
         self.usuarios.append(Usuario(nombre,apellido,password,user))
+
+    def cargamasiva(self,data):
+        hola = re.split('\n',data)
+        print(hola[0])
+        i=1
+        while i < len(hola):
+            texto = re.split(',',hola[i])
+            self.crearLibro(texto[0],texto[1],texto[2],texto[3])
+            i = i+1 
+
+
 
 
 

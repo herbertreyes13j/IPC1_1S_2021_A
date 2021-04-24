@@ -29,6 +29,21 @@
 /*===========================
      01.COMMON css 
 ===========================*/
+
+ 
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+
+input:focus 		{ outline:none; }
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
 body {
   font-family: "Lato", sans-serif;
