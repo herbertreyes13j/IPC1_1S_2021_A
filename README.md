@@ -57,3 +57,4 @@ Se procedio con Actualizar, Eliminar y Crear y carga masiva de datos
 | sudo apt install -y python3-pip | Instalamos PIP para poder instalar los packetes de python |
 | pip3 install flask | Instalamos Flask |
 | pip3 install cors | Instalamos Cors |
+| pip3 install flask_cors | Instalamos cors de python|
