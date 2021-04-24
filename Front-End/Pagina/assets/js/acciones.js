@@ -19,7 +19,7 @@ function cargar(){
             }
 
             console.log(JSON.stringify(cuerpo))
-            fetch('http://localhost:5000/carga', {
+            fetch('http://34.72.166.140:5000/carga', {
             method: 'POST',
             headers,
             body: JSON.stringify(cuerpo),
@@ -59,7 +59,7 @@ function modificarlibro(){
       "imagen":"${imagen.value}"
     }`
   
-    fetch('http://localhost:5000/libros/'+titulo_o.value, {
+    fetch('http://34.72.166.140:5000/libros/'+titulo_o.value, {
       method: 'PUT',
       headers,
       body: reque,
@@ -86,7 +86,7 @@ function modificarlibro(){
 function eliminar(libro,autor){
     console.log(libro,autor)
     
-    fetch('http://localhost:5000/libros/'+libro+'/'+autor,{
+    fetch('http://34.72.166.140:5000/libros/'+libro+'/'+autor,{
         method:'DELETE'
     })
     .then(res => res.text())
@@ -102,7 +102,7 @@ function agregarlibro(){
   let autor = document.getElementById("autor");
   let descripcion = document.getElementById("descripcion");
   let imagen = document.getElementById("imagen")
-  fetch('http://localhost:5000/libros', {
+  fetch('http://34.72.166.140:5000/libros', {
     method: 'POST',
     headers,
     body: `{
@@ -129,7 +129,7 @@ function agregarlibro(){
 function actualizar(){
     document.getElementById("cardsc").innerHTML = '';
     let text="";
-    fetch('http://localhost:5000/obtenerlibros')
+    fetch('http://34.72.166.140:5000/obtenerlibros')
     .then(response => response.json())
     .then(data =>{
         var i;
@@ -158,7 +158,7 @@ function actualizar(){
   // Carga de Libros
 
   let text="";
-  fetch('http://localhost:5000/obtenerlibros')
+  fetch('http://34.72.166.140:5000/obtenerlibros')
   .then(response => response.json())
   .then(data =>{
       var i;
@@ -196,7 +196,7 @@ text2 = `<table class="table" style="margin=10px">
 </thead>
 <tbody>`
 
-fetch('http://localhost:5000/obtenerusuarios')
+fetch('http://34.72.166.140:5000/obtenerusuarios')
 .then(response => response.json())
 .then(data =>{
     var i;
