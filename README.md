@@ -46,6 +46,11 @@ Se procedio con Actualizar, Eliminar y Crear y carga masiva de datos
 
 - Grabacion: https://drive.google.com/file/d/18Xnlp3mDl7Pi7a0Zzz20ORvJ9goesJUY/view?usp=sharing
 
+## Sesion 24/04/2021
+
+Se procedio a configurar los servicios en la nube, y a subir el front y back end
+
+- Grabacion: https://drive.google.com/file/d/1es4yuDQrnSPzLjWDhwQH0NCSO4lD1ztY/view?usp=sharing
 
 ## Comandos en Ubuntu
 
