@@ -3,7 +3,7 @@
 let headers = new Headers()
 headers.append('Content-Type', 'application/json');
 headers.append('Accept', 'application/json');
-headers.append('Access-Control-Allow-Origin', 'http://localhost:5000');
+headers.append('Access-Control-Allow-Origin', 'http://34.67.203.10:5000');
 headers.append('Access-Control-Allow-Credentials', 'true');
 headers.append('GET', 'POST', 'OPTIONS','PUT','DELETE');
 
@@ -20,7 +20,7 @@ function CrearUsuario(){
         return
     }
     //Aca realizamos la peticion
-    fetch('http://localhost:5000/registro',
+    fetch('http://34.67.203.10:5000/registro',
     {
         method:'POST',
         headers,
@@ -62,7 +62,7 @@ function IniciarSesion(){
     let pass = document.getElementById("lpass");
 
 
-    fetch(`http://localhost:5000/login/${usuario.value}/${pass.value}`)
+    fetch(`http://34.67.203.10:5000/login/${usuario.value}/${pass.value}`)
     // Convirtiendo de string a texto
     .then(response => response.json())
     // Manejando la data
